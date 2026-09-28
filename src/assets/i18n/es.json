@@ -1,0 +1,98 @@
+{
+    "primeng": {
+        "dayNamesMin": [
+            "Do",
+            "Lu",
+            "Ma",
+            "Mi",
+            "Ju",
+            "Vi",
+            "Sa"
+        ],
+        "monthNames": [
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"
+        ]
+    },
+    "GLOBAL": {
+        "LBL_ESP": "Español",
+        "LBL_ING": "Inglés",
+        "LBL_SELECCIONE": "Seleccione una opción...",
+        "LBL_BUSCADOR": "Buscador",
+        "LBL_BUSCAR": "Buscar",
+        "LBL_ESTADO": "Estado",
+        "ACTIVO": "Activo",
+        "INACTIVO": "Inactivo",
+        "BTN_VOLVER": "Volver"
+    },
+    "APP_INFO": {
+        "LBL_APPNAME": "Prueba Makers",
+        "LBL_V.S": "1.0.0",
+        "LBL_VERSION": "Versión",
+        "LBL_COPYRIGHT": "Copyright",
+        "LBL_FOOTER": "Todos los Derechos Reservados."
+    },
+    "NAVBAR": {
+        "TITULO": "Prueba Prestamos",
+        "INICIAR_SESION": "Iniciar Sesión"
+    },
+    "SIDEBAR": {
+        "INICIO": "Inicio",
+        "CERRAR_SESION": "Cerrar Sesión"
+    },
+    "BOTONES": {
+        "BTN_GUARDAR": "Guardar",
+        "BTN_CANCELAR": "Cancelar",
+        "BTN_GENERAR": "Generar",
+        "BTN_CLEAR": "Limpiar",
+        "BTN_VOLVER": "Volver"
+    },
+    "COMMON": {
+        "LOGOUT": "Cerrar Sesión",
+        "APPROVE": "Aprobar",
+        "REJECT": "Rechazar",
+        "LOADING": "Cargando"
+    },
+    "HOME": {
+        "WELCOME_USER": "Bienvenido, Usuario",
+        "WELCOME_ADMIN": "Hola, Admin Admin",
+        "LOAN_REQUEST_TITLE": "Solicitar Préstamo",
+        "LOAN_REQUEST_SUBTITLE": "Ingrese el monto que desea solicitar",
+        "AMOUNT_LABEL": "Monto",
+        "AMOUNT_PLACEHOLDER": "Monto",
+        "SUBMIT_BTN": "Solicitar",
+        "MY_LOANS": "Mis Préstamos",
+        "NO_LOANS_USER": "No tienes préstamos registrados.",
+        "NO_LOANS_ADMIN": "No hay solicitudes para evaluar.",
+        "ADMIN_MANAGE_TITLE": "Gestionar Solicitudes de Préstamos",
+        "AMOUNT": "Monto",
+        "STATUS": "Estado",
+        "USER": "Usuario"
+    },
+    "STATUS": {
+        "PENDIENTE": "Pendiente",
+        "APROBADO": "Aprobado",
+        "RECHAZADO": "Rechazado"
+    },
+    "LOGIN": {
+        "TITLE": "Iniciar Sesión",
+        "SUBTITLE": "Ingrese sus credenciales para acceder",
+        "EMAIL_LABEL": "Email",
+        "EMAIL_PLACEHOLDER": "Email",
+        "PASSWORD_LABEL": "Contraseña",
+        "PASSWORD_PLACEHOLDER": "Contraseña",
+        "SUBMIT_BTN": "Ingresar",
+        "SUBMITTING": "Ingresando...",
+        "ERROR_INVALID": "Credenciales inválidas. Intente nuevamente."
+    }
+}

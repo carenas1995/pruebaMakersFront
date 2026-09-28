@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <a routerLink="/home" routerLinkActive="active" class="nav-item">
+      <i class="pi pi-home"></i>
+      <span>{{ 'SIDEBAR.INICIO' | translate }}</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <button class="btn-logout" (click)="logout()">
+      <i class="pi pi-sign-out"></i>
+      <span>{{ 'SIDEBAR.CERRAR_SESION' | translate }}</span>
+    </button>
+  </div>
+</aside>

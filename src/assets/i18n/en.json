@@ -1,0 +1,98 @@
+{
+    "primeng": {
+        "dayNamesMin": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+    },
+    "GLOBAL": {
+    "LBL_ESP": "Spanish",
+    "LBL_ING": "English",
+    "LBL_SELECCIONE": "Select an option...",
+    "LBL_BUSCADOR": "Search engine",
+    "LBL_BUSCAR": "Search",
+    "LBL_ESTADO": "Status",
+    "ACTIVO": "Active",
+    "INACTIVO": "Inactive",
+    "BTN_VOLVER": "Back"
+  },
+    "APP_INFO": {
+       "LBL_APPNAME": "Prueba Makers",
+        "LBL_V.S": "1.0.0",
+        "LBL_VERSION": "Version",
+        "LBL_COPYRIGHT": "Copyright",
+        "LBL_FOOTER": "All Rights Reserved."
+    },
+    "NAVBAR": {
+        "TITULO": "Loans Test",
+        "INICIAR_SESION": "Log In"
+    },
+    "SIDEBAR": {
+    "INICIO": "Home",
+    "CERRAR_SESION": "Log Out"
+  },
+  "BOTONES": {
+    "BTN_GUARDAR": "Save",
+    "BTN_CANCELAR": "Cancel",
+    "BTN_GENERAR": "Generate",
+    "BTN_CLEAR": "Clear",
+    "BTN_VOLVER": "Back"
+  },
+  "COMMON": {
+    "LOGOUT": "Log Out",
+    "APPROVE": "Approve",
+    "REJECT": "Reject",
+    "LOADING": "Loading"
+  },
+  "HOME": {
+    "WELCOME_USER": "Welcome, User",
+    "WELCOME_ADMIN": "Hello, Admin Admin",
+    "LOAN_REQUEST_TITLE": "Request Loan",
+    "LOAN_REQUEST_SUBTITLE": "Enter the amount you wish to request",
+    "AMOUNT_LABEL": "Amount",
+    "AMOUNT_PLACEHOLDER": "Amount",
+    "SUBMIT_BTN": "Request",
+    "MY_LOANS": "My Loans",
+    "NO_LOANS_USER": "You have no registered loans.",
+    "NO_LOANS_ADMIN": "There are no applications to review.",
+    "ADMIN_MANAGE_TITLE": "Manage Loan Applications",
+    "AMOUNT": "Amount",
+    "STATUS": "Status",
+    "USER": "User"
+  },
+  "STATUS": {
+    "PENDIENTE": "Pending",
+    "APROBADO": "Approved",
+    "RECHAZADO": "Rejected"
+  },  
+  "LOGIN": {
+    "TITLE": "Log In",
+    "SUBTITLE": "Enter your credentials to access",
+    "EMAIL_LABEL": "Email",
+    "EMAIL_PLACEHOLDER": "Email",
+    "PASSWORD_LABEL": "Password",
+    "PASSWORD_PLACEHOLDER": "Password",
+    "SUBMIT_BTN": "Log In",
+    "SUBMITTING": "Logging in...",
+    "ERROR_INVALID": "Invalid credentials. Please try again."
+  }
+}

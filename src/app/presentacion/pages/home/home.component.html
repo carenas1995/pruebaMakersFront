@@ -1,0 +1,58 @@
+<div class="home-container">
+  <div *ngIf="cargando" class="loading-container">
+    <div class="spinner"></div>
+    <p>{{ 'COMMON.LOADING' | translate }}...</p>
+  </div>
+  <ng-container *ngIf="!esAdmin">
+    <div class="card-section" *ngIf="!cargando">
+      <h3>{{ 'HOME.LOAN_REQUEST_TITLE' | translate }}</h3>
+      <p class="subtitle">{{ 'HOME.LOAN_REQUEST_SUBTITLE' | translate }}</p>
+      <form [formGroup]="prestamoForm" (ngSubmit)="solicitar()" class="form-solicitud">
+        <div class="form-group">
+          <label for="monto">{{ 'HOME.AMOUNT_LABEL' | translate }}</label>
+          <input id="monto" type="number" formControlName="monto"
+            [placeholder]="'HOME.AMOUNT_PLACEHOLDER' | translate" />
+        </div>
+        <button type="submit" class="btn-primary" [disabled]="prestamoForm.invalid || cargando">
+          {{ 'HOME.SUBMIT_BTN' | translate }}
+        </button>
+      </form>
+    </div>
+    <hr class="divider" />
+    <div class="list-section" *ngIf="!cargando">
+      <h3>{{ 'HOME.MY_LOANS' | translate }}</h3>
+      <div *ngIf="prestamos.length === 0" class="empty-msg">
+        {{ 'HOME.NO_LOANS_USER' | translate }}
+      </div>
+      <div class="prestamo-item" *ngFor="let p of prestamos">
+        <span>
+          {{ 'HOME.AMOUNT' | translate }}: <strong>${{ p.monto }}</strong> -
+          {{ 'HOME.STATUS' | translate }}: <strong>{{ 'STATUS.' + (p.estado | uppercase) | translate }}</strong>
+        </span>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="esAdmin">
+    <div class="card-section" *ngIf="!cargando">
+      <h3>{{ 'HOME.ADMIN_MANAGE_TITLE' | translate }}</h3>
+      <div *ngIf="prestamos.length === 0" class="empty-msg">
+        {{ 'HOME.NO_LOANS_ADMIN' | translate }}
+      </div>
+      <div class="admin-prestamo-card" *ngFor="let p of prestamos">
+        <p class="info-line">
+          {{ 'HOME.USER' | translate }}: <strong>{{ p.usuarioEmail || 'usuario@test.com' }}</strong> -
+          {{ 'HOME.AMOUNT' | translate }}: <strong>${{ p.monto }}</strong> -
+          {{ 'HOME.STATUS' | translate }}: <strong>{{ 'STATUS.' + (p.estado | uppercase) | translate }}</strong>
+        </p>
+        <div class="actions" *ngIf="(p.estado | uppercase) === 'PENDIENTE' || (p.estado | uppercase) === 'PENDING'">
+          <button class="btn-approve" (click)="cambiarEstado(p.id, 'APROBADO')">
+            {{ 'COMMON.APPROVE' | translate }}
+          </button>
+          <button class="btn-reject" (click)="cambiarEstado(p.id, 'RECHAZADO')">
+            {{ 'COMMON.REJECT' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

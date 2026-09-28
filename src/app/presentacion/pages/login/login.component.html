@@ -1,0 +1,23 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>{{ 'LOGIN.TITLE' | translate }}</h2>
+    <p class="subtitle">{{ 'LOGIN.SUBTITLE' | translate }}</p>
+    <div *ngIf="errorMensaje" class="error-alert">
+      {{ errorMensaje | translate }}
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">{{ 'LOGIN.EMAIL_LABEL' | translate }}</label>
+        <input id="email" type="email" formControlName="email" [placeholder]="'LOGIN.EMAIL_PLACEHOLDER' | translate" />
+      </div>
+      <div class="form-group">
+        <label for="password">{{ 'LOGIN.PASSWORD_LABEL' | translate }}</label>
+        <input id="password" type="password" formControlName="password"
+          [placeholder]="'LOGIN.PASSWORD_PLACEHOLDER' | translate" />
+      </div>
+      <button type="submit" class="btn-login" [disabled]="loginForm.invalid || cargando">
+        {{ (cargando ? 'LOGIN.SUBMITTING' : 'LOGIN.SUBMIT_BTN') | translate }}
+      </button>
+    </form>
+  </div>
+</div>
